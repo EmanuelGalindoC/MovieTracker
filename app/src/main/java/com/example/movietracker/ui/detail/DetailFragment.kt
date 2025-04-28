@@ -28,7 +28,6 @@ class DetailFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        // Obtener el argumento movieId con Safe Args
         val movieId = arguments?.let { DetailFragmentArgs.fromBundle(it).movieId }
 
         movieId?.let {
